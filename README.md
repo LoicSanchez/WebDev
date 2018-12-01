@@ -1,5 +1,5 @@
 # WebDev
-This is y work on Web Development
+This is my work on Web Development
 
 # Details
 Blog -> html and css for simple blog posts formatting
