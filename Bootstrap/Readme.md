@@ -8,6 +8,6 @@ LandingPage (.html + .css) -> A landing page for a fictitious new startup compan
 
 Pattern project (.html) -> A page for an image gallery with responsive cards with basic tool bar
 
-Museum of Candy (.html .css and imgs folder) -> A page built with Bootstrap but doesn't look as "Bootstrapy" to present a fictitious Museum of Candy with a lot of responsiveness
+Museum of Candy (.html + .css + imgs folder) -> A page built with Bootstrap but doesn't look as "Bootstrapy" to present a fictitious Museum of Candy with a lot of responsiveness
 
 NavBars (.html) -> A simple mockup for a toolbar with responsive behavior
