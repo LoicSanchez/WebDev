@@ -8,4 +8,3 @@ LandingPage (.html + .css) -> A landing page for a fictitious new startup compan
 
 Pattern project (.html) -> A page for an image gallery with responsive cards with basic tool bar
 
-Grid and Grid2 (.html) -> just a grid
