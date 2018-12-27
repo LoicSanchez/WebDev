@@ -8,3 +8,4 @@ LandingPage (.html + .css) -> A landing page for a fictitious new startup compan
 
 Pattern project (.html) -> A page for an image gallery with responsive cards with basic tool bar
 
+NavBars (.html) -> A simple mockup for a toolbar with responsive behavior
