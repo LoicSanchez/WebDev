@@ -13,4 +13,4 @@ Museum of Candy -> A page built with Bootstrap but doesn't look as "Bootstrapy" 
 
 ## JavaScript
 Color Game -> Guess the RGB color
-![ColorGame](WebDev/img/ColorGame.png)
+![ColorGame](img/ColorGame.png)
