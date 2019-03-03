@@ -17,3 +17,7 @@ Museum of Candy -> A page built with Bootstrap but doesn't look as "Bootstrapy" 
 Color Game -> Guess the RGB color
 
 <img src="img/ColorGame.png" width="50%">
+
+To-Do List -> A to-do list app 
+
+<img src="img/ToDoList.png" width="50%">
