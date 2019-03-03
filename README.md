@@ -11,6 +11,9 @@ Bootstrap -> html pages playing with Bootstrap CSS
 
 Museum of Candy -> A page built with Bootstrap but doesn't look as "Bootstrapy" with a lot of responsiveness
 
+<img src="img/MuseumOfCandy.png" width="50%">
+
 ## JavaScript
 Color Game -> Guess the RGB color
-![ColorGame](img/ColorGame.png)
+
+<img src="img/ColorGame.png" width="50%">
