@@ -21,3 +21,7 @@ Color Game -> Guess the RGB color
 To-Do List -> A to-do list app 
 
 <img src="img/ToDoList.png" width="50%">
+
+MagicKeys -> Press keys on the keyboard to get a sound and animation (works for keys QWERASDF)
+
+<img src="img/MagicKeys.png" width="50%">
