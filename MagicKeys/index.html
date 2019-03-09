@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+	<script src="assets/js/lib/howler.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/magickeys.css">
+	<script type="text/paperscript" canvas="myCanvas">
+		var keyData = {
+			q: {
+			color: "blue",
+			sound: new Howl({
+				src: ['assets/sounds/corona.mp3']
+				}),
+			type: "rect"
+			},
+			w: {
+			color: "purple",
+			sound: new Howl({
+				src: ['assets/sounds/dotted-spiral.mp3']
+				}),
+			type: "rect"	
+			},
+			e: {
+			color: "orange",
+			sound: new Howl({
+				src: ['assets/sounds/flash-1.mp3']
+				}),
+			type: "rect"
+			},
+			r: {
+			color: "white",
+			sound: new Howl({
+				src: ['assets/sounds/flash-2.mp3']
+				}),
+			type: "rect"
+			},
+			a: {
+			color: "#2c3e50",
+			sound: new Howl({
+				src: ['assets/sounds/bubbles.mp3']
+				}),
+			type: "circ"
+			},
+			s: {
+			color: "#16a085",
+			sound: new Howl({
+				src: ['assets/sounds/clay.mp3']
+				}),
+			type: "circ"
+			},
+			d: {
+			color: "green",
+			sound: new Howl({
+				src: ['assets/sounds/confetti.mp3']
+				}),
+			type: "circ"
+			},
+			f: {
+			color: "yellow",
+			sound: new Howl({
+				src: ['assets/sounds/flash-3.mp3']
+				}),
+			type: "circ"
+			}
+		}
+
+		function onKeyDown(event) {
+		if (keyData[event.key]){
+				var maxPoint = new Point (view.size.width-300, view.size.height-300);
+				var randomPoint = Point.random();
+				var point = maxPoint * randomPoint;
+				if (keyData[event.key].type === "circ"){
+					var newCircle = new Path.Circle(point, 500);
+					newCircle.fillColor = keyData[event.key].color;
+
+					newCircle.onFrame = function(event) {
+						this.fillColor.hue += 1;
+						this.scale(0.9);
+					}
+				} else if (keyData[event.key].type === "rect"){
+					var rectangle = new Rectangle(point, new Point(point.x+650, point.y+500));
+					var newRectangle = new Path.Rectangle(rectangle);
+					newRectangle.fillColor = keyData[event.key].color;
+
+					newRectangle.onFrame = function(event) {
+						this.fillColor.hue += 1;
+						this.scale(0.9);
+						this.rotate(3);
+					}
+				}
+				keyData[event.key].sound.play();
+			}
+		}
+
+	</script>
+</head>
+<body>
+<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
