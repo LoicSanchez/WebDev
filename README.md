@@ -25,3 +25,7 @@ To-Do List -> A to-do list app
 MagicKeys -> Press keys on the keyboard to get a sound and animation (works for keys QWERASDF)
 
 <img src="img/MagicKeys.png" width="50%">
+
+## NodeJS app
+
+BlogApp -> a blog app built with MongoDB, Express.js and Node.js - style with Semantic UI
